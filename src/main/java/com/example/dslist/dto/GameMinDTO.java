@@ -9,6 +9,7 @@ public class GameMinDTO {
     private Integer year;
     private String imgUrl;
     private String shortDescription;
+    private Integer postion;
 
     public GameMinDTO() {}
 
@@ -26,6 +27,7 @@ public class GameMinDTO {
         this.year = projection.getGameYear();
         this.imgUrl = projection.getImgUrl();
         this.shortDescription = projection.getShortDescription();
+        this.postion = projection.getPosition();
     }
 
     public Long getId() {
@@ -47,4 +49,6 @@ public class GameMinDTO {
     public String getShortDescription() {
         return shortDescription;
     }
+
+    public Integer getPostion() {return  postion;}
 }
